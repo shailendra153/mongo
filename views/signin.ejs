@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%-include('_boot.ejs')%>
+</head>
+
+<body>
+    <%-include('_navbar.ejs')%>
+        <div class="container">
+            <form action="/signin" method="post">
+                <div class="form">
+                    <label class="form-label">email</label>
+                    <input type="email" name="email" class="form-control">
+                </div>
+                <div class="form">
+                    <label class="form-label">Password</label>
+                    <input type="password" name="password" class="form-control">
+
+                </div>
+                <button type="submit" class="btn btn-success"> Sign In</button>
+            </form>
+
+        </div>
+
+</body>
+
+</html>
